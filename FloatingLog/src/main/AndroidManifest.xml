@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="chen.zheng.floatinglog">
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <service android:name="chen.zheng.floatinglog.LogUpdateService" />
+    </application>
+
+</manifest>

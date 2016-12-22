@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/log_switch"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/switch_thumb_enable" />
+
+    <TextView
+        android:id="@+id/touchable_text"
+        style="@style/notify_text_style"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/log_switch"
+        android:text="Touchable" />
+
+    <ImageView
+        android:id="@+id/touchable_checkbox"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/touchable_text"
+        android:src="@drawable/ic_choose" />
+
+    <LinearLayout
+        android:id="@+id/filter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/touchable_checkbox"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--V-->
+        <TextView
+            android:id="@+id/filter_v"
+            style="@style/notify_text_style"
+            android:text="V" />
+
+        <ImageView
+            android:id="@+id/filter_v_checkbox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_choose" />
+        <!--D-->
+        <TextView
+            android:id="@+id/filter_d"
+            style="@style/notify_text_style"
+            android:text="D" />
+
+        <ImageView
+            android:id="@+id/filter_d_checkbox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_choose" />
+        <!--I-->
+
+        <TextView
+            android:id="@+id/filter_i"
+            style="@style/notify_text_style"
+            android:text="I" />
+
+        <ImageView
+            android:id="@+id/filter_i_checkbox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_choose" />
+
+        <!--W-->
+        <TextView
+            android:id="@+id/filter_w"
+            style="@style/notify_text_style"
+            android:text="W" />
+
+        <ImageView
+            android:id="@+id/filter_w_checkbox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_choose" />
+    </LinearLayout>
+
+
+</RelativeLayout>
